@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    max-width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -115,7 +116,8 @@ header div.container nav{
 header div nav div.pages{
     display: flex;
     justify-content: space-evenly;
-    width: 98vw;
+    max-width: 98vw;
+    min-width: 95vw;
     margin: 0vh 1vw 1.5vw 1vw;
 }
 header div nav div.socials{
@@ -242,6 +244,46 @@ footer {
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    border-top: solid 1px rgb(56, 56, 56);
+    color: rgb(225, 239, 230);
+    background-color: rgb(0, 4, 17);
+    display: flex;
+    justify-content: stretch;
+}
+
+footer .email,
+footer .nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .email{
+    width: 40%;
+}
+
+footer .nav{
+    width: 60%;
+}
+
+footer div nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div.nav nav a {
+    margin: auto;
+    width: fit-content;
+    color: inherit;
+}
+
+footer div.nav p.copyright {
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 10vw;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 /* mobile media query */
