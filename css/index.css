@@ -259,6 +259,38 @@ footer .nav {
 
 footer .email{
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .email h4{
+    font-size: 4rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer .email .input{
+    height: 4vh;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .email .input input,
+footer .email .input button{
+    height: 100%;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+footer .email .input input{
+    width: 70%;
+}
+
+footer .email .input button{
+    width: 30%;
 }
 
 footer .nav{
