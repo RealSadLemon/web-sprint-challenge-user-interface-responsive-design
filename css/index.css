@@ -96,12 +96,36 @@ header div.container{
     background-color: rgb(0, 4, 17, .8);
     color: rgb(225, 239, 230);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-flow: column nowrap;
 }
 header div a{
     color: inherit;
+}
+header h1{
+    margin: 2.5vh 0vh 1.8vh 0vh;
+}
+header div.container nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header div nav div.pages{
+    display: flex;
+    justify-content: space-evenly;
+    width: 98vw;
+    margin: 0vh 1vw 1.5vw 1vw;
+}
+header div nav div.socials{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2vw;
+    width: 25vw;
+}
+header div nav div.socials i{
+    font-size: 2vw;
 }
 
 /* spacers */
@@ -123,6 +147,13 @@ header div a{
     text-align: center;
     background-color: rgb(0, 4, 17);
 }
+.gallery h2{
+    color: rgb(225, 239, 230);
+    padding-top: 5vh;
+}
+.gallery .images img{
+    margin: 1.5vw;
+}
 
 /* about us section */
 .about {
@@ -133,6 +164,7 @@ header div a{
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    color: rgb(225, 239, 230);
 }
 
 .about-container {
@@ -160,6 +192,7 @@ header div a{
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(0, 4, 17);
+    color: rgb(225, 239, 230);
 }
 
 .contact-container {
@@ -197,6 +230,10 @@ header div a{
 
 .contacts {
     width: 25%;
+}
+
+.contacts a{
+    color: inherit;
 }
 
 /* footer section */
