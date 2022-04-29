@@ -357,6 +357,9 @@ footer div.nav p.copyright {
     .gallery {
         height: auto;
     }
+    section.gallery div div.images img {
+        margin: 2vh 0%;
+    } 
     
     /* about us section */
 
@@ -401,5 +404,53 @@ footer div.nav p.copyright {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .email{
+        width: 100%;
+    }
+    footer .email h4{
+        font-size: 2.5rem;
+        margin: 1vh 0vw;
+        width: 80%;
+        text-align: center;
+    }
+    footer .email .input {
+        margin-top: 2.5vh;
+        flex-direction: column;
+        width: 90%;
+    }
+    footer .email .input input,
+    footer .email .input button{
+        width: 100%;
+    }
+    footer div.nav {
+        justify-content: space-between;
+    }
+    footer div.nav nav,
+    footer div.nav p.copyright{
+        margin: 2vh 0vw;
+    }
+    footer div nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .nav nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 1vh;
+        max-width: 98vw;
+    }
+    footer div.nav p.copyright{
+        justify-self: center;
+        align-self: center;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 1.5rem;
     }
 }
