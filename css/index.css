@@ -92,6 +92,17 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+header div.container{
+    background-color: rgb(0, 4, 17, .8);
+    color: rgb(225, 239, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+header div a{
+    color: inherit;
+}
 
 /* spacers */
 .spacer {
