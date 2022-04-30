@@ -2,7 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+*{
+    max-width: 100%;
+    margin-right: 0vw;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -302,7 +305,7 @@ footer div.nav p.copyright {
         align-items: center;
     }
     header a {
-        width: 70%;
+        max-width: 70%;
     }
     header a h1 {
         margin: 2vh 0px;
@@ -326,13 +329,77 @@ footer div.nav p.copyright {
     }
 
     /* menu */
+    body {
+        width: 100vw;
+    }
+    body div#width-cap{
+        width: 100vw;
+        max-width: 100%;
+        margin: 0vw;
+    }
     .menu {
         background-image: none;
         color: rgb(0, 4, 17);
+        width: 100vw;
+        margin: 0vw;
     }
 
     .menu .background-color{
+        font-weight: bold;
         background-color: rgb(225, 239, 230);
+        text-align: center;
+        margin: 0vw;
+    }
+
+    .menu .background-color h2{
+        padding-bottom: 0vh;
+        margin-bottom: 5vh;
+        border-bottom: solid 2vh rgb(0, 4, 17);
+    }
+
+    .menu .background-color .menu-container,
+    .menu .background-color .menu-container2{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 100%;
+        margin: 0vw;
+    }
+
+    .menu .background-color .menu-container .menu-section,
+    .menu .background-color .menu-container2 .menu-section{
+        width: 100%;
+    }
+
+    .menu .background-color .menu-container .menu-section h3,
+    .menu .background-color .menu-container .menu-section .menu-item,
+    .menu .background-color .menu-container2 .menu-section h3,
+    .menu .background-color .menu-container2 .menu-section .menu-item{
+        text-align: center;
+    }
+
+    .menu .background-color .menu-container .menu-section .menu-item,
+    .menu .background-color .menu-container2 .menu-section .menu-item{
+        border-bottom: solid .75vh rgb(0, 4, 17);
+    }
+
+    .menu .background-color .menu-container2 .menu-section .menu-item{
+        border-bottom: none;
+    }
+
+    .menu .background-color .menu-container .menu-section .menu-item div,
+    .menu .background-color .menu-container2 .menu-section .menu-item div{
+        flex-direction: column;
+        margin: 2vh 0vw;
+    }
+
+    .menu .background-color .menu-container .menu-section h3,
+    .menu .background-color .menu-container2 .menu-section h3 {
+        border: solid .75vh rgb(0, 4, 17);
+        padding: .5vh 1vw .5vh 1vw;
+        text-align: center;
+        width: 75vw;
+        align-self: center;
     }
 
     /* footer section */
