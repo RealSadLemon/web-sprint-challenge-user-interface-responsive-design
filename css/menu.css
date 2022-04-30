@@ -155,6 +155,62 @@ header div nav div.socials i{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: rgb(225, 239, 230);
+    border-top: solid 1px rgb(53, 53, 53);
+}
+
+.menu .background-color{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 4, 17, .8);
+}
+
+.menu .background-color h2{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+.menu .background-color .menu-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.menu .background-color .menu-container2{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.menu .background-color .menu-container .menu-section,
+.menu .background-color .menu-container2 .menu-section{
+    width: 50%;
+    padding: 0% 10%;
+    margin-bottom: 10vh;
+}
+
+.menu .background-color .menu-container .menu-section h3,
+.menu .background-color .menu-container .menu-section .menu-item,
+.menu .background-color .menu-container2 .menu-section h3,
+.menu .background-color .menu-container2 .menu-section .menu-item{
+    padding-bottom: 2vh;
+}
+
+.menu .background-color .menu-container .menu-section .menu-item,
+.menu .background-color .menu-container2 .menu-section .menu-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .background-color .menu-container .menu-section .menu-item div,
+.menu .background-color .menu-container2 .menu-section .menu-item div{
+    display: flex;
+    justify-content: space-between;
 }
 
 /* footer section */
@@ -240,16 +296,43 @@ footer div.nav p.copyright {
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    .header-title {
-        width: 75%;
-        margin: 0 auto;
-        text-align: center;
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header a {
+        width: 70%;
+    }
+    header a h1 {
+        margin: 2vh 0px;
+        width: 100%;
         font-size: 4rem;
+        text-align: center;
+    }
+    header div.pages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 1vh;
+    }
+    header div nav div.socials{
+        margin: 1vh 0vw 2vh 0vw;
+    }
+    header div nav div.socials i {
+        font-size: 3rem;
+        margin: 1.5vw;
     }
 
     /* menu */
     .menu {
         background-image: none;
+        color: rgb(0, 4, 17);
+    }
+
+    .menu .background-color{
+        background-color: rgb(225, 239, 230);
     }
 
     /* footer section */
@@ -257,5 +340,53 @@ footer div.nav p.copyright {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .email{
+        width: 100%;
+    }
+    footer .email h4{
+        font-size: 2.5rem;
+        margin: 1vh 0vw;
+        width: 80%;
+        text-align: center;
+    }
+    footer .email .input {
+        margin-top: 2.5vh;
+        flex-direction: column;
+        width: 90%;
+    }
+    footer .email .input input,
+    footer .email .input button{
+        width: 100%;
+    }
+    footer div.nav {
+        justify-content: space-between;
+    }
+    footer div.nav nav,
+    footer div.nav p.copyright{
+        margin: 2vh 0vw;
+    }
+    footer div nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .nav nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 1vh;
+        max-width: 98vw;
+    }
+    footer div.nav p.copyright{
+        justify-self: center;
+        align-self: center;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 1.5rem;
     }
 }
