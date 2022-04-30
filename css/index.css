@@ -320,12 +320,14 @@ footer div.nav p.copyright {
 
 /* mobile media query */
 @media (max-width: 428px) {
-    html {
-        max-width: 100vw;
-        min-width: 100px;
-    }
     *{
         max-width: 100%;
+    }
+    html {
+        max-width: 100vw;
+        min-width: 0vw;
+        padding-right: 0px;
+        width: 100vw;
     }
     /* header section */
     header {
@@ -401,6 +403,10 @@ footer div.nav p.copyright {
     .contacts {
         width: 100%;
         padding-bottom: 2.5vh;
+    }
+
+    .contacts div a{
+        font-size: 8vw;
     }
 
     /* footer section */
